@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply dark:bg-black dark:text-[#E8E8E8] bg-[#E8E8E8] text-black;
+    overflow-x: hidden;
   }
 }
 
