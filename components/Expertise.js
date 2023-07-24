@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import CSS from '@/public/language_logo/css.svg';
 import Docker from '@/public/language_logo/docker.svg';
@@ -18,34 +18,101 @@ function Expertise() {
   const skillList = [
     { title: 'HTML', component: HTML },
     { title: 'CSS', component: CSS },
-    { title: 'Docker', component: Docker },
+    { title: 'React', component: ReactLogo },
+    { title: 'TypeScript', component: Typescript },
     { title: 'Flutter', component: Flutter },
+    { title: 'Tailwind CSS', component: Tailwind },
     { title: 'Git', component: Git },
 
-    { title: 'MongoDB', component: MongoDb },
     { title: 'Node.js', component: Nodejs },
     { title: 'PostgreSQL', component: Postgres },
-    { title: 'React', component: ReactLogo },
-    { title: 'Tailwind CSS', component: Tailwind },
-    { title: 'TypeScript', component: Typescript },
+    { title: 'MongoDB', component: MongoDb },
+    // { title: 'Docker', component: Docker },
   ];
 
+  const [selected, setSelected] = useState(true);
   return (
     <section
       className="wrapper flex md:flex-row flex-col-reverse py-28 gap-14"
       id="expertise"
     >
       <div className="w-full md:w-3/5">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase text-[#8CCE58] mb-8 tracking-wider">
+        <div className="items-center flex justify-center flex-row mb-4  ">
+          <div
+            style={{ backgroundColor: !selected ? '' : '#9B50D6' }}
+            className="  rounded-lg shadow-md p-2 mr-6 border-solid border-2 border-[#9B50D6]"
+          >
+            <button onClick={() => setSelected(true)}>
+              <p className=" font-bold">Coding Skills</p>
+            </button>
+          </div>
+
+          <div
+            style={{ backgroundColor: selected ? '' : '#9B50D6' }}
+            className=" rounded-lg shadow-md p-2 border-solid border-2 border-[#9B50D6]"
+          >
+            <button onClick={() => setSelected(false)}>
+              <p className=" font-bold">Soft Skills</p>
+            </button>
+          </div>
+        </div>
+
+        {selected ? (
+          <div className="flex flex-col items-center md:flex-row md:justify-center ">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap gap-4">
+              <div className=" rounded-lg shadow-md p-6">
+                <p className=" mb-4 text-xl font-bold">Frontend Devlopment</p>
+                <p className="text-xs text-[#8CCE58] font-bold">
+                  Bringing imaganation to reality{' '}
+                </p>
+              </div>
+              <div className=" rounded-lg shadow-md p-6">
+                <p className="mb-4 text-xl font-bold">Web Devlopment</p>
+                <p className="text-xs text-[#8CCE58] font-bold">
+                  Creating dynamic and intutive web applications
+                </p>
+              </div>
+              <div className=" rounded-lg shadow-md p-6">
+                <p className="mb-4 text-xl font-bold">Mobile Development</p>
+                <p className="text-xs  text-[#8CCE58]   font-bold">
+                  Impress the world with innotive mobile apps.
+                </p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="flex flex-col items-center md:flex-row md:justify-center ">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap gap-4">
+              <div className=" rounded-lg shadow-md p-6  ">
+                <p className=" mb-4 text-xl font-bold">Communication</p>
+                <p className="text-xs text-[#8CCE58] font-bold">
+                  Effective exchange of informationa and ideas
+                </p>
+              </div>
+              <div className=" rounded-lg shadow-md p-6">
+                <p className="mb-4 text-xl font-bold">Collaboration</p>
+                <p className="text-xs text-[#8CCE58] font-bold">
+                  I work effectively in a team environment
+                </p>
+              </div>
+              <div className=" rounded-lg shadow-md p-6">
+                <p className="mb-4 text-xl font-bold">Problem Solving</p>
+                <p className="text-xs  text-[#8CCE58]   font-bold">
+                  Analytical reasoning, providing to acheive logical solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase text-[#8CCE58] mt-32 mb-4 tracking-wider">
           what i know
         </h2>
-
-        <h3 className="text-2xl font-bold mb-2 ">Mobile Development</h3>
+        {/* <h3 className="text-2xl font-bold mb-2 ">Mobile Development</h3>
         <p className="text-base mb-7 dark:text-gray-300 text-gray-700">
           Web and mobile development involves creating websites and applications
           that run on the internet or mobile devices, using a variety of
           programming languages and tools to build, test, and deploy software
-        </p>
+        </p> */}
         <div>
           <div className="flex gap-3 items-start">
             <div>

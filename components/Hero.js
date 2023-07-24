@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 import HeroDark from '@/public/hero.svg';
 import { useTheme } from 'next-themes';
 import HeroLight from '@/public/hero_light.svg';
+import { BiSun, BiMoon } from 'react-icons/bi';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 function Hero() {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(true);
   return (
     <div className="px-3 flex items-center flex-col py-14 md:py-32">
       <AnimatePresence>
@@ -42,7 +43,17 @@ function Hero() {
                     theme == 'dark' ? setTheme('light') : setTheme('dark');
                   }}
                   className="w-24 h-10 bg-[#8BD650] rounded-full peer peer-focus:ring-green-300 peer-checked:after:right-[5px] peer-checked:after:left-auto peer-checked:after:border-l peer-checked:after:border-black after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-black after:border-gray-300 after:border after:rounded-full after:h-8 after:w-8 after:transition-all peer-checked:bg-[#6da83f]"
-                ></div>
+                >
+                  <div className="flex justify-between flex-row">
+                    <div className="mt-2 ml-2">
+                      <BiMoon size={20} color="white" />
+                    </div>
+
+                    <div className="mt-2 mr-2">
+                      <BiSun size={20} color="white" />
+                    </div>
+                  </div>
+                </div>
               </label>
             </div>
           </div>

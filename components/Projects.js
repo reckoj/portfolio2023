@@ -52,7 +52,7 @@ function Projects() {
   return (
     <section className="wrapper py-28" id="experience">
       <h2 className="text-center text-3xl md:text-5xl font-bold mb-10">
-        {`Some of the projects I've worked on before`}
+        {`Projects I've completed`}
       </h2>
 
       <div className="flex flex-wrap justify-center gap-y-10 md:gap-y-14">
