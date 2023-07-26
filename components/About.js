@@ -28,19 +28,16 @@ function About() {
         who am i?
       </h2>
       <div className="flex flex-col-reverse md:flex-row gap-7 md:gap-14">
-        <p className="text-lg md:text-xl dark:text-gray-300 text-gray-600 leading-8 w-full md:w-5/5">
+        <p className="text-lg md:text-lg dark:text-gray-300 text-gray-600 leading-8 w-full md:w-5/5">
           {`
-          As a full stack web and mobile developer with a focus in frontend development,
+           I am a pastionate software developer, specialzing in Mobile and Web development,
            I am passionate about creating visually stunning, user-friendly websites and mobile 
-           apps that offer a seamless user experience. I specialize in transforming beautiful designs 
-           into fully functional, responsive interfaces that exceed user expectations.
+           apps that offer a seamless user experience. 
            In addition to my frontend development skills, I also possess a solid understanding of 
-           backend development, databases, and APIs. This allows me to seamlessly integrate frontend 
-           and backend technologies to create dynamic, responsive applications that meet the needs of modern businesses.
-           Overall, I am a driven, detail-oriented frontend developer with a passion for creating digital experiences that 
-           exceed expectations. I am excited to continue growing my skills and exploring new technologies as I help businesses 
-           bring their digital visions to life.
-          
+           backend development. This allows me to seamlessly 
+           integrate into different teams and make an instant impact. I stay up-to-date with the latest industry trends and best practices
+            by constantly building new projects or improving current ones and by taking online courses. My commitment to always improving ensures that I deliver quality software.
+
           
           `}
         </p>
