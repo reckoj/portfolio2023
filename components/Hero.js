@@ -24,7 +24,7 @@ function Hero() {
             </span>
 
             <p class="text-2xl sm:text-3xl md:text-5xl my-5 font-bold">
-              A Mobile and Web developer based in Canada
+              A Fullstack developer based in Canada
             </p>
           </h1>
 

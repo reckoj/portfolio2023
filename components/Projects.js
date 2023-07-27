@@ -7,68 +7,78 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import Image from 'next/image';
 import ProjectsCarousel from './ProjectsCarousel';
+import Link from 'next/link';
 
 function Projects() {
-  const projectList = [
-    {
-      name: 'All in one - Client project',
-      desc: '',
-      date: 'February 2, 2023',
-      link: '#',
-      image: ProjectOne,
-    },
-    {
-      name: 'Wireframing for GoPlane SuperApp',
-      desc: '',
-      date: 'October 21, 2019',
-      image: ProjectTwo,
-    },
-  ];
-  function Project({ name, date, image, desc, image2 }) {
-    return (
-      <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        >
-          <Image src={image} alt={name} className="w-full h-auto" />
-          {/* <Image src={image2} alt={name} className="w-full h-auto" /> */}
-
-          <div className="flex flex-row justify-around md:flex-row md:items-center w-full mt-3 md:mt-5">
-            <h3 className="text-base md:text-2xl font-bold mb-2 md:mb-0">
-              {name}
-            </h3>
-            <p>{desc}</p>
-            <p className="text-base font-bold md:text-2xl dark:text-gray-400">
-              {date}
-            </p>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-    );
-  }
-
   return (
     <section className="wrapper py-28" id="experience">
-      <h2 className="text-center text-3xl md:text-5xl font-bold mb-10">
+      <h2 className="text-center text-3xl md:text-5xl font-bold ">
         {`Projects I've completed`}
       </h2>
 
       <div className="flex flex-wrap justify-center gap-y-10 md:gap-y-14">
-        {/* {projectList.map((project, id) => {
-          return (
-            <Project
-              key={id}
-              name={project.name}
-              desc={project.desc}
-              image={project.image}
-              // image2={project.image2}
-              date={project.date}
+        {/* <ProjectsCarousel /> */}
+        <div className="flex flex-wrap -mx-4">
+          {/* <div className="w-full md:w-1/3 px-4 mb-4 md:mb-0">
+            <Image
+              src={ProjectOne.src}
+              alt="all in ones"
+              width={700}
+              height={800}
             />
-          );
-        })} */}
-        <ProjectsCarousel />
+
+            <div className=" p-4 flex justify-center items-center">
+              All In One - Client project fjsoifmns ifsofmjs oifjmsf oifj0spfm
+              foijfds oif0psm
+              <Link
+                className="text-sm underline hover:underline-offset-4 text-100 ml-2 text-[#8CCE58] "
+                href="https://youtu.be/GcZyLF9h5Xk"
+                target="_blank"
+              >
+                See brief video on youtube
+              </Link>
+            </div>
+          </div> */}
+          <div className="w-full md:w-full px-4 mb-4 md:mb-0">
+            <Image
+              src={ProjectOne.src}
+              alt="all in ones"
+              width={700}
+              height={800}
+            />
+
+            <div className=" p-4 flex justify-center items-center">
+              All In One - Client project
+              <Link
+                className="text-sm underline hover:underline-offset-4 text-100 ml-2 text-[#8CCE58] "
+                href="https://youtu.be/GcZyLF9h5Xk"
+                target="_blank"
+              >
+                See brief video on youtube
+              </Link>
+            </div>
+          </div>
+          {/* <div className="w-full md:w-1/3 px-4 mb-4 md:mb-0">
+            <Image
+              src={ProjectOne.src}
+              alt="all in ones"
+              width={700}
+              height={800}
+            />
+
+            <div className=" p-4 flex justify-center items-center">
+              All In One - Client project fjsoifmns ifsofmjs oifjmsf oifj0spfm
+              foijfds oif0psm
+              <Link
+                className="text-sm underline hover:underline-offset-4 text-100 ml-2 text-[#8CCE58] "
+                href="https://youtu.be/GcZyLF9h5Xk"
+                target="_blank"
+              >
+                See brief video on youtube
+              </Link>
+            </div>
+          </div> */}
+        </div>
       </div>
     </section>
   );
