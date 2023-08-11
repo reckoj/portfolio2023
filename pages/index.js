@@ -10,6 +10,7 @@ import Expertise from '@/components/Expertise';
 import Feature from '@/components/Feature';
 import Projects from '@/components/Projects';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
+import Projects2 from '@/components/Projects2';
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -24,7 +25,7 @@ export default function Home() {
         <Feature />
         <Expertise />
         <Projects />
-        {/* <ProjectsCarousel /> */}
+        <Projects2 />
         <Cta />
         <Footer />
       </main>

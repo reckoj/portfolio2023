@@ -1,10 +1,5 @@
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import ProjectOne from '@/public/project/allinone2.png';
-import ProjectTwo from '@/public/project/trainMe1.png';
-import Github from '@/public/github-icon-1.svg';
-import Image from 'next/image';
-import { BsGithub } from 'react-icons/bs';
+
 import Link from 'next/link';
 
 const ProjectsCarousel = () => {
@@ -17,8 +12,6 @@ const ProjectsCarousel = () => {
     //   width={900}
     // >
     <div>
-      <img src={ProjectOne.src} />
-
       <div>
         <p className="  font-bold md:text-2xl dark:text-gray-400 flex items-center  justify-center  mb-10">
           All In One - Client project

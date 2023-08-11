@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind tailwind.csss
+
+/* Customize the overlapping effect */
+/* .ml-[-50px] {
+  margin-left: -50px;
+} */
 
 @layer base {
   body {

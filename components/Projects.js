@@ -1,84 +1,96 @@
 import React from 'react';
-import ProjectOne from '@/public/project/allinone2.png';
-import ProjectTwo from '@/public/project/trainMe1.png';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import { motion, AnimatePresence } from 'framer-motion';
+import DiscoveryImage from '@/public/discovery.svg';
+
+import { BsBoxArrowUpRight } from 'react-icons/bs';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
-import ProjectsCarousel from './ProjectsCarousel';
 import Link from 'next/link';
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.3 } },
+};
+const featureImage = {
+  hidden: {
+    opacity: 0,
+    x: 30,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 2,
+    },
+    whileInView: {
+      opacity: 1,
+    },
+  },
+};
 
 function Projects() {
   return (
-    <section className="wrapper py-28" id="experience">
-      <h2 className="text-center text-3xl md:text-5xl font-bold ">
-        {`Projects I've completed`}
-      </h2>
-
-      <div className="flex flex-wrap justify-center gap-y-10 md:gap-y-14">
-        {/* <ProjectsCarousel /> */}
-        <div className="flex flex-wrap -mx-4">
-          {/* <div className="w-full md:w-1/3 px-4 mb-4 md:mb-0">
-            <Image
-              src={ProjectOne.src}
-              alt="all in ones"
-              width={700}
-              height={800}
+    <section id="featured">
+      <div className="w-full text-5xl md:w-3/5 flex  ">
+        <h2 className="md:text-5xl lg:text-8xl font-bold ml-32">
+          {`Projects I've completed`}
+        </h2>
+      </div>
+      <div className="wrapper py-10 flex flex-col md:flex-row gap-14 md:gap-12">
+        <AnimatePresence>
+          <motion.div whileInView={{ opacity: 1 }} className="w-full md:w-3/5 ">
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              src={DiscoveryImage.src}
+              alt="feature image"
+              className="w-full rounded-lg"
             />
+          </motion.div>
 
-            <div className=" p-4 flex justify-center items-center">
-              All In One - Client project fjsoifmns ifsofmjs oifjmsf oifj0spfm
-              foijfds oif0psm
+          <motion.div
+            className="w-full text-5xl md:w-3/5"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            <div className="sm:max-w-lg text-lg md:text-xl font-normal text-gray-600 dark:text-gray-300">
+              <p className="-mt-10 md:mb-6">
+                Discovery is a client project - A web based application which
+                allows users to create and manage organizations. Each
+                organization can have associated details, such as name,
+                industry, location. More features such Customer Management:
+                users manage customer profiles, Contact Management: This feature
+                enables users to maintain a comprehensive list of contacts
+                associated with each organization or customer. Order Management:
+                facilitates the creation of customer orders and interactions.
+                Users can manage orders, view order and resolve orders once
+                completetd.
+              </p>
+              <div className="flex flex-wrap items-center flex-row mb-6">
+                <p className="text-[#8BD650] ">React</p>
+                <p className="text-[#8BD650]  mx-4">Redux</p>
+                <p className="text-[#8BD650]  mx-4">Node.js</p>
+                <p className="text-[#8BD650]  mx-4">Express</p>
+                <p className="text-[#8BD650]  mx-4">MongoDB</p>
+                <p className="text-[#8BD650]  mx-4">Tailwind</p>
+              </div>
+            </div>
+            <div className="flex">
               <Link
-                className="text-sm underline hover:underline-offset-4 text-100 ml-2 text-[#8CCE58] "
-                href="https://youtu.be/GcZyLF9h5Xk"
+                className="flex items-center"
+                href="https://discovery-eosin.vercel.app/"
                 target="_blank"
               >
-                See brief video on youtube
+                <p className="text-sm mr-2 text-[#9B50D6] ">Try it out here!</p>
+                <BsBoxArrowUpRight size={12} color="9B50D6" />
               </Link>
             </div>
-          </div> */}
-          <div className="w-full md:w-full px-4 mb-4 md:mb-0">
-            <Image
-              src={ProjectOne.src}
-              alt="all in ones"
-              width={700}
-              height={800}
-            />
-
-            <div className=" p-4 flex justify-center items-center">
-              All In One - Client project
-              <Link
-                className="text-sm underline hover:underline-offset-4 text-100 ml-2 text-[#8CCE58] "
-                href="https://youtu.be/GcZyLF9h5Xk"
-                target="_blank"
-              >
-                See brief video on youtube
-              </Link>
-            </div>
-          </div>
-          {/* <div className="w-full md:w-1/3 px-4 mb-4 md:mb-0">
-            <Image
-              src={ProjectOne.src}
-              alt="all in ones"
-              width={700}
-              height={800}
-            />
-
-            <div className=" p-4 flex justify-center items-center">
-              All In One - Client project fjsoifmns ifsofmjs oifjmsf oifj0spfm
-              foijfds oif0psm
-              <Link
-                className="text-sm underline hover:underline-offset-4 text-100 ml-2 text-[#8CCE58] "
-                href="https://youtu.be/GcZyLF9h5Xk"
-                target="_blank"
-              >
-                See brief video on youtube
-              </Link>
-            </div>
-          </div> */}
-        </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );
