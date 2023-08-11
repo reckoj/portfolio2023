@@ -61,7 +61,9 @@ function Expertise() {
           <div className="flex flex-col items-center md:flex-row md:justify-center ">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap gap-4">
               <div className=" rounded-lg shadow-md p-6">
-                <p className=" mb-4 text-xl font-bold">Frontend Devlopment</p>
+                <p className=" mb-4 text-xl font-bold">
+                  Full Stack Development
+                </p>
                 <p className="text-xs text-[#8CCE58] font-bold">
                   Bringing imaganation to reality{' '}
                 </p>
