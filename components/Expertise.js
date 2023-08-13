@@ -37,6 +37,9 @@ function Expertise() {
       id="expertise"
     >
       <div className="w-full md:w-3/5">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase text-[#8CCE58] mt-32 mb-10 tracking-wider">
+          what i know
+        </h2>
         <div className="items-center flex justify-center flex-row mb-4  ">
           <div
             style={{ backgroundColor: !selected ? '' : '#9B50D6' }}
@@ -106,9 +109,7 @@ function Expertise() {
             </div>
           </div>
         )}
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase text-[#8CCE58] mt-32 mb-4 tracking-wider">
-          what i know
-        </h2>
+
         {/* <h3 className="text-2xl font-bold mb-2 ">Mobile Development</h3>
         <p className="text-base mb-7 dark:text-gray-300 text-gray-700">
           Web and mobile development involves creating websites and applications
@@ -116,9 +117,8 @@ function Expertise() {
           programming languages and tools to build, test, and deploy software
         </p> */}
         <div>
-          <div className="flex gap-3 items-start">
+          <div className="flex gap-3 items-start mt-8">
             <div>
-              {/* side ball */}
               <div className="w-5 h-5 border border-black rounded-full mt-1 md:mt-2 dark:border-white"></div>
             </div>
             <article>

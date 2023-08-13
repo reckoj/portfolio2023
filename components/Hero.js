@@ -7,7 +7,7 @@ import { BiSun, BiMoon } from 'react-icons/bi';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 function Hero() {
-  const { systemTheme, theme, setTheme } = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme('');
   const [enabled, setEnabled] = useState(true);
   return (
     <div className="px-3 flex items-center flex-col py-14 md:py-32">

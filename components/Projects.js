@@ -73,13 +73,14 @@ function Projects() {
               <div className="flex flex-wrap items-center flex-row mb-6">
                 <p className="text-[#8BD650] ">React</p>
                 <p className="text-[#8BD650]  mx-4">Redux</p>
+                <p className="text-[#8BD650]  mx-4">TypeScript</p>
                 <p className="text-[#8BD650]  mx-4">Node.js</p>
                 <p className="text-[#8BD650]  mx-4">Express</p>
                 <p className="text-[#8BD650]  mx-4">MongoDB</p>
                 <p className="text-[#8BD650]  mx-4">Tailwind</p>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex mb-10">
               <Link
                 className="flex items-center"
                 href="https://discovery-eosin.vercel.app/"
@@ -89,6 +90,14 @@ function Projects() {
                 <BsBoxArrowUpRight size={12} color="9B50D6" />
               </Link>
             </div>
+
+            <span className="sm:max-w-lg text-lg md:text-lg font-bold text-[#8BD650] dark:text-[#8BD650]">
+              NOTE:
+            </span>
+            <p className="sm:max-w-lg text-lg md:text-lg font-normal text-gray-600 dark:text-gray-300">
+              Backend is hosted on a free server, which takes about 15-20
+              seconds to respond to intial requests.
+            </p>
           </motion.div>
         </AnimatePresence>
       </div>

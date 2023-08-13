@@ -52,11 +52,12 @@ function Projects2() {
               employee off days tracking, sending company wide or single user
               notification announcements and much more...
             </p>
-            <div className="flex flex-wrap items-center flex-row mb-6">
+            <div className="flex flex-row flex-wrap items-center flex-row mb-6">
               <p className="text-[#8BD650] ">React Native</p>
               <p className="text-[#8BD650]  mx-4">Node.js</p>
               <p className="text-[#8BD650]  mx-4">Express</p>
               <p className="text-[#8BD650]  mx-4">MongoDB</p>
+              <p className="text-[#8BD650]  mx-4">{`Google Api's`}</p>
             </div>
           </div>
           <div className="flex">
