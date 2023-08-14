@@ -32,7 +32,7 @@ const featureImage = {
 
 function Projects() {
   return (
-    <section id="featured">
+    <section id="experience">
       <div className="w-full text-5xl md:w-3/5 flex  ">
         <h2 className="md:text-5xl lg:text-8xl font-bold ml-32">
           {`Projects I've completed`}
