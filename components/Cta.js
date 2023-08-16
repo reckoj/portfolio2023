@@ -10,13 +10,6 @@ function Cta() {
       id="contact"
       className="flex justify-center items-center flex-col mb-10"
     >
-      {/* <Link
-        target="_blank"
-        href="https://www.linkedin.com/in/recko-jean-5369b09a/"
-        className="mb-4 md:mb-8 mt-10 block dark:hidden"
-      >
-        <Image src={LinkdinLight} width={50} height={50} alt="linkdin logo" />
-      </Link> */}
       <h2 className="text-4xl md:text-8xl md:w-full font-bold text-center leading-tight mb-8 md:mb-24">
         Keep in touch with me <br /> Say Hi
       </h2>
@@ -26,17 +19,19 @@ function Cta() {
         project I'm also open to the possibilty. Please feel free to reach out
         to me.`}{' '}
         <br />
-        <span className="text-[#8CCE58] font-bold mt-4">THANK YOU!</span>
+        <span className="text-[#8CCE58] font-bold mt-4 ">THANK YOU!</span>
       </p>
 
       <div className="items-center flex justify-center flex-row mb-4  ">
         <div className="  rounded-lg shadow-md p-2 mr-6 border-solid border-2 border-[#9B50D6] hover:bg-[#9B50D6]">
+          <p className="text-[#8CCE58] animate-pulse">For Permanent Role</p>
           <Link href={'mailto:reckojean@gmail.com'}>
             <p className=" font-bold">Recko Jean</p>
           </Link>
         </div>
 
-        <div className="  rounded-lg shadow-md p-2 mr-6 border-solid border-2 border-[#9B50D6] hover:bg-[#9B50D6]">
+        <div className="rounded-lg shadow-md p-2 mr-6 border-solid border-2 border-[#9B50D6] hover:bg-[#9B50D6]">
+          <p className="text-[#8CCE58] animate-pulse">For Freelance Role</p>
           <Link href={'mailto:dokadatech@gmail.com'}>
             <p className=" font-bold">Dokadatech</p>
           </Link>

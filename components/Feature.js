@@ -71,7 +71,7 @@ const Feature = () => {
           </div>
           <div className="flex gap-2">
             <p className="text-sm">
-              Official relase to app and play store coming soon!
+              Official relase to Apple App and Google Play store coming soon!
             </p>
             {/* <Link href="" target="_blank">
               <Image src={AppStore} alt="applestore" width={150} height={150} />

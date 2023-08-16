@@ -64,9 +64,7 @@ function Expertise() {
           <div className="flex flex-col items-center md:flex-row md:justify-center ">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap gap-4">
               <div className=" rounded-lg shadow-md p-6">
-                <p className=" mb-4 text-xl font-bold">
-                  Full Stack Development
-                </p>
+                <p className=" mb-4 text-xl font-bold">FullStack Development</p>
                 <p className="text-xs text-[#8CCE58] font-bold">
                   Bringing imaganation to reality{' '}
                 </p>
@@ -135,7 +133,7 @@ function Expertise() {
           </div>
           <div>
             <h4 className="text-xl dark:text-gray-300 text-gray-700 font-bold mt-14">
-              Full Stack Developer Knowlegde
+              FullStack Developer Knowlegde
             </h4>
             <div className="flex flex-wrap items-center justify-start gap-4">
               {skillList.map((skill, id) => {

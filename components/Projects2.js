@@ -45,12 +45,15 @@ function Projects2() {
         >
           <div className="sm:max-w-lg text-lg md:text-xl font-normal text-gray-600 dark:text-gray-300">
             <p className="mt-7  md:mb-6">
-              All In One is a client project - The client wanted an app where
-              admins can create employees, set their location and have employees
-              clock in using the app but only when they are within a specified
-              distance of their work location. Other functionalities include
-              employee off days tracking, sending company wide or single user
-              notification announcements and much more...
+              <span className="font-bold text-[#9B50D6] text-lg">
+                {`All In One `}
+              </span>
+              is a client project - The client wanted an app where admins can
+              create employees, set their location and have employees clock in
+              using the app but only when they are within a specified distance
+              of their work location. Other functionalities include employee off
+              days tracking, sending company wide or single user notification
+              announcements and much more...
             </p>
             <div className="flex flex-row flex-wrap items-center flex-row mb-6">
               <p className="text-[#8BD650] ">React Native</p>

@@ -59,16 +59,16 @@ function Projects() {
           >
             <div className="sm:max-w-lg text-lg md:text-xl font-normal text-gray-600 dark:text-gray-300">
               <p className="-mt-10 md:mb-6">
-                Discovery is a client project - A web based application which
-                allows users to create and manage organizations. Each
-                organization can have associated details, such as name,
-                industry, location. More features such Customer Management:
-                users manage customer profiles, Contact Management: This feature
-                enables users to maintain a comprehensive list of contacts
-                associated with each organization or customer. Order Management:
-                facilitates the creation of customer orders and interactions.
-                Users can manage orders, view order and resolve orders once
-                completetd.
+                <span className="font-bold text-[#9B50D6] text-lg">{`Discovery `}</span>
+                is a client project - A web based application which allows users
+                to create and manage organizations. Each organization can have
+                associated details, such as name, industry, location. More
+                features such Customer Management: users manage customer
+                profiles, Contact Management: This feature enables users to
+                maintain a comprehensive list of contacts associated with each
+                organization or customer. Order Management: facilitates the
+                creation of customer orders and interactions. Users can manage
+                orders, view order and resolve orders once completetd.
               </p>
               <div className="flex flex-wrap items-center flex-row mb-6">
                 <p className="text-[#8BD650] ">React</p>
